@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/parallels/study/gamecrash/src/sqrt.cpp
+math.h
+-
+
+/home/parallels/study/gamecrash/tests/sqrt_tests.cpp
+../src/sqrt.cpp
+/home/parallels/study/gamecrash/src/sqrt.cpp
+gtest/gtest.h
+-
+

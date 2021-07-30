@@ -1,0 +1,3 @@
+/home/parallels/study/gen/build/CMakeFiles/rebuild_cache.dir
+/home/parallels/study/gen/build/CMakeFiles/edit_cache.dir
+/home/parallels/study/gen/build/CMakeFiles/runTests.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/gamecrash.dir/src/main.cpp.o  -o gamecrash  -lsfml-graphics -lsfml-window -lsfml-system 
