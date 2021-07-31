@@ -76,12 +76,12 @@ clean: CMakeFiles/runTests.dir/clean
 CMakeFiles/gamecrash.dir/all:
 	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/depend
 	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=1,2 "Built target gamecrash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=1,2,3 "Built target gamecrash"
 .PHONY : CMakeFiles/gamecrash.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gamecrash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/study/gamecrash/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/study/gamecrash/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gamecrash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/study/gamecrash/build/CMakeFiles 0
 .PHONY : CMakeFiles/gamecrash.dir/rule
@@ -103,7 +103,7 @@ CMakeFiles/gamecrash.dir/clean:
 CMakeFiles/runTests.dir/all:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/depend
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=3,4 "Built target runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=4,5 "Built target runTests"
 .PHONY : CMakeFiles/runTests.dir/all
 
 # Build rule for subdir invocation for target.

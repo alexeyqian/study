@@ -6,9 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/parallels/study/gamecrash/src/main.cpp
+/home/parallels/study/gamecrash/src/ClientUI.cpp
+./include/ClientUI.h
+/home/parallels/study/gamecrash/src/include/ClientUI.h
 sstream
+-
+string
+-
+vector
 -
 SFML/Graphics.hpp
 -
+
+/home/parallels/study/gamecrash/src/include/ClientUI.h
+vector
+-
+string
+-
+SFML/Graphics.hpp
+-
+./GameSetting.h
+/home/parallels/study/gamecrash/src/include/GameSetting.h
+
+/home/parallels/study/gamecrash/src/include/GameSetting.h
+
+/home/parallels/study/gamecrash/src/main.cpp
+sstream
+-
+string
+-
+vector
+-
+SFML/Graphics.hpp
+-
+./include/GameSetting.h
+/home/parallels/study/gamecrash/src/include/GameSetting.h
+./include/ClientUI.h
+/home/parallels/study/gamecrash/src/include/ClientUI.h
 

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o"
   "CMakeFiles/gamecrash.dir/src/main.cpp.o"
   "gamecrash"
   "gamecrash.pdb"

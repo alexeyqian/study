@@ -10,5 +10,5 @@ add_executable(runTests tests/sqrt_tests.cpp)
 target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
 
 ###### sfml ######
-add_executable(gamecrash src/main.cpp)
+add_executable(gamecrash src/main.cpp src/ClientUI.cpp src/include/ClientUI.h src/include/GameSetting.h)
 target_link_libraries(gamecrash sfml-graphics sfml-window sfml-system)

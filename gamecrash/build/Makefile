@@ -136,6 +136,33 @@ runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
+src/ClientUI.o: src/ClientUI.cpp.o
+
+.PHONY : src/ClientUI.o
+
+# target to build an object file
+src/ClientUI.cpp.o:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o
+.PHONY : src/ClientUI.cpp.o
+
+src/ClientUI.i: src/ClientUI.cpp.i
+
+.PHONY : src/ClientUI.i
+
+# target to preprocess a source file
+src/ClientUI.cpp.i:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/ClientUI.cpp.i
+.PHONY : src/ClientUI.cpp.i
+
+src/ClientUI.s: src/ClientUI.cpp.s
+
+.PHONY : src/ClientUI.s
+
+# target to generate assembly for a file
+src/ClientUI.cpp.s:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/ClientUI.cpp.s
+.PHONY : src/ClientUI.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -200,6 +227,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... gamecrash"
 	@echo "... runTests"
+	@echo "... src/ClientUI.o"
+	@echo "... src/ClientUI.i"
+	@echo "... src/ClientUI.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
