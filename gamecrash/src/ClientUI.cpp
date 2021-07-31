@@ -111,7 +111,18 @@ void ClientUI::updateScore(){
     scoreText.setString(ss.str());
 }
 
-void ClientUI::drawAll(sf::RenderWindow& window, bool paused){
+void ClientUI::setupTimeBar(){
+    timeBar.setSize(Vector2f(timeBarStartWith, timeBarHeight));
+    timeBar.setFillColor(Color::Red);
+    timeBar.setPosition((setting_.windowWidth / 2) - timeBarStartWith/2, setting_.windowHeight);
+}
+
+void ClientUI::resetTimeAndScore(){
+    score = 0;
+    timeRemaining = 6;
+}
+
+void ClientUI::drawAll(sf::RenderWindow& window){
     window.draw(spriteBackground);
 
     for(auto spriteCloud : this->spriteClouds){
@@ -121,8 +132,40 @@ void ClientUI::drawAll(sf::RenderWindow& window, bool paused){
     window.draw(spriteTree);
     window.draw(spriteBee);
     window.draw(scoreText);
-
+    window.draw(timeBar);
+    
     if(paused){
         window.draw(messageText);
     }
+}
+
+void ClientUI::pauseGame() {
+    paused = true;
+}
+
+void ClientUI::resumeGame(){
+    paused = false;
+}
+
+bool ClientUI::isGamePaused(){
+    return paused;
+}
+
+void ClientUI::updateTimeBar(Time dt){
+    timeRemaining -= dt.asSeconds();
+    float timeBarWidthPerSecond = timeBarStartWith/timeRemaining;
+    timeBar.setSize(Vector2f(timeBarWidthPerSecond * timeRemaining, timeBarHeight));
+
+    if(timeRemaining <= 0.0f) {
+        pauseGame();
+        showOutOfTimeMessage();
+    }
+}
+
+void ClientUI::showOutOfTimeMessage(){
+    messageText.setString("Out of time!");
+    // re-position the text based on its new size
+    FloatRect textRect = messageText.getLocalBounds();
+    messageText.setOrigin(textRect.left + textRect.width / 2.0f, textRect.top + textRect.height / 2.0f);
+    messageText.setPosition(setting_.windowWidth / 2.0f, setting_.windowHeight / 2.0f);
 }

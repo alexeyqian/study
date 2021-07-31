@@ -22,9 +22,10 @@ int main()
     clientUI.setupClouds();
     clientUI.setupBee();
     clientUI.setupText();
+    clientUI.setupTimeBar();
 
     Clock clock;
-    bool paused = true;
+    
     while (window.isOpen())
     {
         /////////////// handle the players input
@@ -32,16 +33,19 @@ int main()
             window.close();
         }
         if(Keyboard::isKeyPressed(Keyboard::Return)){
-            paused = false;
+            clientUI.resumeGame();
+            clientUI.resetTimeAndScore();
         }
 
-        if(!paused){
+        if(!clientUI.isGamePaused()){
 
             //////////////////////////// update the scene
             // measure time
             // it returns the amount of time that has elapsed since the last time we restarted the clock.
             // dt stands for delta time, which is the time between two updates.
             Time dt = clock.restart();
+            
+            clientUI.updateTimeBar(dt);
             
             clientUI.animateClouds(dt);
             clientUI.animateBee(dt);
@@ -55,7 +59,7 @@ int main()
         window.clear();
 
         // Draw out game scene here
-        clientUI.drawAll(window, paused);
+        clientUI.drawAll(window);
 
         /////////// Show everything we just drew
         window.display();

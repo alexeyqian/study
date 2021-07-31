@@ -9,7 +9,35 @@
 using namespace sf;
 
 class ClientUI {
+public:
+    ClientUI();
+    ClientUI(GameSetting setting);
+
+    void setupBackground();
+    void setupTree();
+    void setupClouds();
+    void setupBee();
+    void setupText();
+
+    void animateClouds(Time dt);
+    void animateBee(Time dt);
+    void updateScore();
+    void setupTimeBar();
+    void drawAll(sf::RenderWindow& window);
+
+    void updateTimeBar(Time dt);
+    void resetTimeAndScore();
+    void pauseGame();
+    void resumeGame();
+    bool isGamePaused();
+    void showOutOfTimeMessage();
+
+    float timeRemaining = 6.0f;
 private:
+    GameSetting setting_;
+    bool paused = true;
+    RectangleShape timeBar;
+
     Sprite spriteBackground;
     Sprite spriteTree;
     
@@ -27,24 +55,8 @@ private:
     Text scoreText;
 
     int score = 0;
-
-public:
-    ClientUI();
-    ClientUI(GameSetting setting);
-
-    void setupBackground();
-    void setupTree();
-    void setupClouds();
-    void setupBee();
-    void setupText();
-
-    void animateClouds(Time dt);
-    void animateBee(Time dt);
-    void updateScore();
-    void drawAll(sf::RenderWindow& window, bool paused);
-
-private:
-    GameSetting setting_;
+    float timeBarStartWith = 400;
+    float timeBarHeight = 80;
 };
 
 #endif
