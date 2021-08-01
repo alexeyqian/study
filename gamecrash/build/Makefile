@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/study/gamecrash
+CMAKE_SOURCE_DIR = /home/alexey/study/gamecrash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/study/gamecrash/build
+CMAKE_BINARY_DIR = /home/alexey/study/gamecrash/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/study/gamecrash/build/CMakeFiles /home/parallels/study/gamecrash/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/study/gamecrash/build/CMakeFiles /home/alexey/study/gamecrash/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/parallels/study/gamecrash/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/study/gamecrash/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gamecrash
-
-# Build rule for target.
-gamecrash: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gamecrash
-.PHONY : gamecrash
-
-# fast build rule for target.
-gamecrash/fast:
-	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/build
-.PHONY : gamecrash/fast
-
-#=============================================================================
 # Target rules for targets named runTests
 
 # Build rule for target.
@@ -135,6 +122,19 @@ runTests: cmake_check_build_system
 runTests/fast:
 	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
+
+#=============================================================================
+# Target rules for targets named gamecrash
+
+# Build rule for target.
+gamecrash: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gamecrash
+.PHONY : gamecrash
+
+# fast build rule for target.
+gamecrash/fast:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/build
+.PHONY : gamecrash/fast
 
 src/ClientUI.o: src/ClientUI.cpp.o
 
@@ -163,6 +163,60 @@ src/ClientUI.cpp.s:
 	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/ClientUI.cpp.s
 .PHONY : src/ClientUI.cpp.s
 
+src/GameBackgroud.o: src/GameBackgroud.cpp.o
+
+.PHONY : src/GameBackgroud.o
+
+# target to build an object file
+src/GameBackgroud.cpp.o:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o
+.PHONY : src/GameBackgroud.cpp.o
+
+src/GameBackgroud.i: src/GameBackgroud.cpp.i
+
+.PHONY : src/GameBackgroud.i
+
+# target to preprocess a source file
+src/GameBackgroud.cpp.i:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.i
+.PHONY : src/GameBackgroud.cpp.i
+
+src/GameBackgroud.s: src/GameBackgroud.cpp.s
+
+.PHONY : src/GameBackgroud.s
+
+# target to generate assembly for a file
+src/GameBackgroud.cpp.s:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.s
+.PHONY : src/GameBackgroud.cpp.s
+
+src/GameCloud.o: src/GameCloud.cpp.o
+
+.PHONY : src/GameCloud.o
+
+# target to build an object file
+src/GameCloud.cpp.o:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o
+.PHONY : src/GameCloud.cpp.o
+
+src/GameCloud.i: src/GameCloud.cpp.i
+
+.PHONY : src/GameCloud.i
+
+# target to preprocess a source file
+src/GameCloud.cpp.i:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/GameCloud.cpp.i
+.PHONY : src/GameCloud.cpp.i
+
+src/GameCloud.s: src/GameCloud.cpp.s
+
+.PHONY : src/GameCloud.s
+
+# target to generate assembly for a file
+src/GameCloud.cpp.s:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/GameCloud.cpp.s
+.PHONY : src/GameCloud.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -189,6 +243,33 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/sqrt.o: src/sqrt.cpp.o
+
+.PHONY : src/sqrt.o
+
+# target to build an object file
+src/sqrt.cpp.o:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/sqrt.cpp.o
+.PHONY : src/sqrt.cpp.o
+
+src/sqrt.i: src/sqrt.cpp.i
+
+.PHONY : src/sqrt.i
+
+# target to preprocess a source file
+src/sqrt.cpp.i:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/sqrt.cpp.i
+.PHONY : src/sqrt.cpp.i
+
+src/sqrt.s: src/sqrt.cpp.s
+
+.PHONY : src/sqrt.s
+
+# target to generate assembly for a file
+src/sqrt.cpp.s:
+	$(MAKE) -f CMakeFiles/gamecrash.dir/build.make CMakeFiles/gamecrash.dir/src/sqrt.cpp.s
+.PHONY : src/sqrt.cpp.s
 
 tests/sqrt_tests.o: tests/sqrt_tests.cpp.o
 
@@ -225,14 +306,23 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... gamecrash"
 	@echo "... runTests"
+	@echo "... gamecrash"
 	@echo "... src/ClientUI.o"
 	@echo "... src/ClientUI.i"
 	@echo "... src/ClientUI.s"
+	@echo "... src/GameBackgroud.o"
+	@echo "... src/GameBackgroud.i"
+	@echo "... src/GameBackgroud.s"
+	@echo "... src/GameCloud.o"
+	@echo "... src/GameCloud.i"
+	@echo "... src/GameCloud.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/sqrt.o"
+	@echo "... src/sqrt.i"
+	@echo "... src/sqrt.s"
 	@echo "... tests/sqrt_tests.o"
 	@echo "... tests/sqrt_tests.i"
 	@echo "... tests/sqrt_tests.s"

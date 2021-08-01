@@ -5,6 +5,8 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
+#include "include/GameBackground.h"
+
 using namespace sf;
 
 ClientUI::ClientUI(){
@@ -16,32 +18,21 @@ ClientUI::ClientUI(GameSetting setting) {
 }
 
 void ClientUI::setupBackground(){
-    Texture textureBackground;
-    textureBackground.loadFromFile("../src/graphics/background.png");
-    spriteBackground.setTexture(textureBackground);
-    spriteBackground.setPosition(0, 0);
+    background_.setup();
 }
 
-void ClientUI::setupTree(){
+void ClientUI::setupClouds(){
+    cloudsManager_.setup();
+}
+
+void ClientUI::setupTrees(){
     Texture textureTree;
     textureTree.loadFromFile("../src/graphics/tree.png");
     spriteTree.setTexture(textureTree);
     spriteTree.setPosition(810, 0);
 }
 
-void ClientUI::setupClouds(){
-    Texture textureCloud;
-    textureCloud.loadFromFile("../src/graphics/cloud.png");
-
-    for(int i = 0; i < setting_.cloudCount; i++){
-        spriteClouds[i].setTexture(textureCloud);
-        spriteClouds[i].setPosition(0, i * 250);
-        cloudActives[i] = false;
-        cloudSpeeds[i] = 0;
-    }
-}
-
-void ClientUI::setupBee(){
+void ClientUI::setupBees(){
     Texture textureBee;
     textureBee.loadFromFile("../src/graphics/bee.png");
     spriteBee.setTexture(textureBee);
@@ -67,22 +58,7 @@ void ClientUI::setupText(){
 }
 
 void ClientUI::animateClouds(Time dt){
-    for(int i = 0; i < setting_.cloudCount; i++){
-        if (!cloudActives[i]){
-            srand((int)time(0)*10+i);
-            cloudSpeeds[i] = rand() % 200;
-            srand((int)time(0)*10);
-            float height = rand() % 150;
-            spriteClouds[i].setPosition(-200, height);
-            cloudActives[i] = true;
-        } else {
-            int x = this->spriteClouds[i].getPosition().x + (this->cloudSpeeds[i] * dt.asSeconds());
-            spriteClouds[i].setPosition(x, spriteClouds[i].getPosition().y);
-            if(spriteClouds[i].getPosition().x > setting_.windowWidth){
-                cloudActives[i] = false;
-            }
-        }
-    }
+   cloudsManager_.animate();
 }
 
 void ClientUI::animateBee(Time dt){
@@ -123,7 +99,7 @@ void ClientUI::resetTimeAndScore(){
 }
 
 void ClientUI::drawAll(sf::RenderWindow& window){
-    window.draw(spriteBackground);
+    window.draw(background_.getBackgroundForDraw());
 
     for(auto spriteCloud : this->spriteClouds){
         window.draw(spriteCloud);

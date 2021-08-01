@@ -3,8 +3,13 @@
 
 #include <vector>
 #include <string>
+
 #include <SFML/Graphics.hpp>
+
 #include "./GameSetting.h"
+#include "./GameBackground.h"
+#include "./GameCloud.h"
+#include "./GameCloudsManager.h"
 
 using namespace sf;
 
@@ -14,9 +19,9 @@ public:
     ClientUI(GameSetting setting);
 
     void setupBackground();
-    void setupTree();
+    void setupTrees();
     void setupClouds();
-    void setupBee();
+    void setupBees();
     void setupText();
 
     void animateClouds(Time dt);
@@ -35,16 +40,15 @@ public:
     float timeRemaining = 6.0f;
 private:
     GameSetting setting_;
+    GameBackground background_;
+    GameCloudsManager cloudsManager_;
+
     bool paused = true;
     RectangleShape timeBar;
 
-    Sprite spriteBackground;
     Sprite spriteTree;
     
-    // clouds
-    std::vector<bool> cloudActives;
-    std::vector<float> cloudSpeeds;
-    std::vector<Sprite> spriteClouds;
+    
 
     // bee
     Sprite spriteBee;

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/study/gamecrash
+CMAKE_SOURCE_DIR = /home/alexey/study/gamecrash
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/study/gamecrash/build
+CMAKE_BINARY_DIR = /home/alexey/study/gamecrash/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gamecrash.dir/depend.make
@@ -57,45 +57,90 @@ include CMakeFiles/gamecrash.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gamecrash.dir/flags.make
 
-CMakeFiles/gamecrash.dir/src/main.cpp.o: CMakeFiles/gamecrash.dir/flags.make
-CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gamecrash.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/main.cpp.o -c /home/parallels/study/gamecrash/src/main.cpp
-
-CMakeFiles/gamecrash.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamecrash.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/study/gamecrash/src/main.cpp > CMakeFiles/gamecrash.dir/src/main.cpp.i
-
-CMakeFiles/gamecrash.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamecrash.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/study/gamecrash/src/main.cpp -o CMakeFiles/gamecrash.dir/src/main.cpp.s
-
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: CMakeFiles/gamecrash.dir/flags.make
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: ../src/ClientUI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o -c /home/parallels/study/gamecrash/src/ClientUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o -c /home/alexey/study/gamecrash/src/ClientUI.cpp
 
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamecrash.dir/src/ClientUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/study/gamecrash/src/ClientUI.cpp > CMakeFiles/gamecrash.dir/src/ClientUI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/study/gamecrash/src/ClientUI.cpp > CMakeFiles/gamecrash.dir/src/ClientUI.cpp.i
 
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamecrash.dir/src/ClientUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/study/gamecrash/src/ClientUI.cpp -o CMakeFiles/gamecrash.dir/src/ClientUI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/study/gamecrash/src/ClientUI.cpp -o CMakeFiles/gamecrash.dir/src/ClientUI.cpp.s
+
+CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o: CMakeFiles/gamecrash.dir/flags.make
+CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o: ../src/GameBackgroud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o -c /home/alexey/study/gamecrash/src/GameBackgroud.cpp
+
+CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/study/gamecrash/src/GameBackgroud.cpp > CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.i
+
+CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/study/gamecrash/src/GameBackgroud.cpp -o CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.s
+
+CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o: CMakeFiles/gamecrash.dir/flags.make
+CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o: ../src/GameCloud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o -c /home/alexey/study/gamecrash/src/GameCloud.cpp
+
+CMakeFiles/gamecrash.dir/src/GameCloud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamecrash.dir/src/GameCloud.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/study/gamecrash/src/GameCloud.cpp > CMakeFiles/gamecrash.dir/src/GameCloud.cpp.i
+
+CMakeFiles/gamecrash.dir/src/GameCloud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamecrash.dir/src/GameCloud.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/study/gamecrash/src/GameCloud.cpp -o CMakeFiles/gamecrash.dir/src/GameCloud.cpp.s
+
+CMakeFiles/gamecrash.dir/src/main.cpp.o: CMakeFiles/gamecrash.dir/flags.make
+CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gamecrash.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/main.cpp.o -c /home/alexey/study/gamecrash/src/main.cpp
+
+CMakeFiles/gamecrash.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamecrash.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/study/gamecrash/src/main.cpp > CMakeFiles/gamecrash.dir/src/main.cpp.i
+
+CMakeFiles/gamecrash.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamecrash.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/study/gamecrash/src/main.cpp -o CMakeFiles/gamecrash.dir/src/main.cpp.s
+
+CMakeFiles/gamecrash.dir/src/sqrt.cpp.o: CMakeFiles/gamecrash.dir/flags.make
+CMakeFiles/gamecrash.dir/src/sqrt.cpp.o: ../src/sqrt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gamecrash.dir/src/sqrt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gamecrash.dir/src/sqrt.cpp.o -c /home/alexey/study/gamecrash/src/sqrt.cpp
+
+CMakeFiles/gamecrash.dir/src/sqrt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gamecrash.dir/src/sqrt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/study/gamecrash/src/sqrt.cpp > CMakeFiles/gamecrash.dir/src/sqrt.cpp.i
+
+CMakeFiles/gamecrash.dir/src/sqrt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gamecrash.dir/src/sqrt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/study/gamecrash/src/sqrt.cpp -o CMakeFiles/gamecrash.dir/src/sqrt.cpp.s
 
 # Object files for target gamecrash
 gamecrash_OBJECTS = \
+"CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o" \
+"CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o" \
+"CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o" \
 "CMakeFiles/gamecrash.dir/src/main.cpp.o" \
-"CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o"
+"CMakeFiles/gamecrash.dir/src/sqrt.cpp.o"
 
 # External object files for target gamecrash
 gamecrash_EXTERNAL_OBJECTS =
 
-gamecrash: CMakeFiles/gamecrash.dir/src/main.cpp.o
 gamecrash: CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o
+gamecrash: CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o
+gamecrash: CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o
+gamecrash: CMakeFiles/gamecrash.dir/src/main.cpp.o
+gamecrash: CMakeFiles/gamecrash.dir/src/sqrt.cpp.o
 gamecrash: CMakeFiles/gamecrash.dir/build.make
 gamecrash: CMakeFiles/gamecrash.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parallels/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable gamecrash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/study/gamecrash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable gamecrash"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gamecrash.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +153,6 @@ CMakeFiles/gamecrash.dir/clean:
 .PHONY : CMakeFiles/gamecrash.dir/clean
 
 CMakeFiles/gamecrash.dir/depend:
-	cd /home/parallels/study/gamecrash/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/study/gamecrash /home/parallels/study/gamecrash /home/parallels/study/gamecrash/build /home/parallels/study/gamecrash/build /home/parallels/study/gamecrash/build/CMakeFiles/gamecrash.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alexey/study/gamecrash/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexey/study/gamecrash /home/alexey/study/gamecrash /home/alexey/study/gamecrash/build /home/alexey/study/gamecrash/build /home/alexey/study/gamecrash/build/CMakeFiles/gamecrash.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gamecrash.dir/depend
 

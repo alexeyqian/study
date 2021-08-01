@@ -1,6 +1,9 @@
 #ifndef GAMESETTING_H
 #define GAMESETTING_H
 
+#define DEFAULT_WINDOW_WIDTH 1920
+#define DEFAULT_WINDOW_HEIGHT 1080
+
 struct GameSetting {
 public:
     static GameSetting getDefaultSetting() {
@@ -9,9 +12,8 @@ public:
         return setting;
     }
 
-    int windowWidth = 1000;
-    int windowHeight = 800;
-    int cloudCount = 3;
+    int windowWidth = DEFAULT_WINDOW_WIDTH;
+    int windowHeight = DEFAULT_WINDOW_HEIGHT;
 };
 
 #endif

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/parallels/study/gamecrash/tests/sqrt_tests.cpp" "/home/parallels/study/gamecrash/build/CMakeFiles/runTests.dir/tests/sqrt_tests.cpp.o"
+  "/home/alexey/study/gamecrash/tests/sqrt_tests.cpp" "/home/alexey/study/gamecrash/build/CMakeFiles/runTests.dir/tests/sqrt_tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -3,6 +3,7 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
+//#include "GameCrashConfig.h"
 #include "./include/GameSetting.h"
 #include "./include/ClientUI.h"
 
@@ -10,6 +11,9 @@ using namespace sf;
 
 int main()
 {
+    //std::cout<<arv[0] << " Version " << GameCrash_VERSION_MAJOR << "."
+    //    << GameCrash_VERSION_MINOR << std::endl;
+
     GameSetting setting;
     VideoMode vm(setting.windowWidth, setting.windowHeight);
     sf::RenderWindow window(vm, "Timber");//, sf::Style::Fullscreen);
@@ -18,9 +22,10 @@ int main()
     
     ClientUI clientUI(setting);
     clientUI.setupBackground();
-    clientUI.setupTree();
     clientUI.setupClouds();
-    clientUI.setupBee();
+    clientUI.setupTrees();
+    clientUI.setupBees();
+    
     clientUI.setupText();
     clientUI.setupTimeBar();
 

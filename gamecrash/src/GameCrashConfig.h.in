@@ -1,0 +1,2 @@
+#define GameCrash_VERSION_MAJOR @GameCrash_VERSION_MAJOR@
+#define GameCrash_VERSION_MINOR @GameCrash_VERSION_MINOR@

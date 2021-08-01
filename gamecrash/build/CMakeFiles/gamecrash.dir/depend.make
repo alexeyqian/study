@@ -3,9 +3,21 @@
 
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: ../src/ClientUI.cpp
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: ../src/include/ClientUI.h
+CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: ../src/include/GameBackground.h
+CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: ../src/include/GameCloud.h
 CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o: ../src/include/GameSetting.h
 
+CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o: ../src/GameBackgroud.cpp
+CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o: ../src/include/GameBackground.h
+
+CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o: ../src/GameCloud.cpp
+CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o: ../src/include/GameCloud.h
+
 CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/include/ClientUI.h
+CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/include/GameBackground.h
+CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/include/GameCloud.h
 CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/include/GameSetting.h
 CMakeFiles/gamecrash.dir/src/main.cpp.o: ../src/main.cpp
+
+CMakeFiles/gamecrash.dir/src/sqrt.cpp.o: ../src/sqrt.cpp
 

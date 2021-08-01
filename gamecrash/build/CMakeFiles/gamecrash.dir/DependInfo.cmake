@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/parallels/study/gamecrash/src/ClientUI.cpp" "/home/parallels/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o"
-  "/home/parallels/study/gamecrash/src/main.cpp" "/home/parallels/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/main.cpp.o"
+  "/home/alexey/study/gamecrash/src/ClientUI.cpp" "/home/alexey/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/ClientUI.cpp.o"
+  "/home/alexey/study/gamecrash/src/GameBackgroud.cpp" "/home/alexey/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/GameBackgroud.cpp.o"
+  "/home/alexey/study/gamecrash/src/GameCloud.cpp" "/home/alexey/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/GameCloud.cpp.o"
+  "/home/alexey/study/gamecrash/src/main.cpp" "/home/alexey/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/main.cpp.o"
+  "/home/alexey/study/gamecrash/src/sqrt.cpp" "/home/alexey/study/gamecrash/build/CMakeFiles/gamecrash.dir/src/sqrt.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

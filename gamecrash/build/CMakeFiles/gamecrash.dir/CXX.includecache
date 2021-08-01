@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/parallels/study/gamecrash/src/ClientUI.cpp
+/home/alexey/study/gamecrash/src/ClientUI.cpp
 ./include/ClientUI.h
-/home/parallels/study/gamecrash/src/include/ClientUI.h
+/home/alexey/study/gamecrash/src/include/ClientUI.h
 sstream
 -
 string
@@ -17,8 +17,16 @@ vector
 -
 SFML/Graphics.hpp
 -
+include/GameBackground.h
+/home/alexey/study/gamecrash/src/include/GameBackground.h
 
-/home/parallels/study/gamecrash/src/include/ClientUI.h
+/home/alexey/study/gamecrash/src/GameBackgroud.cpp
+include/GameBackground.h
+/home/alexey/study/gamecrash/src/include/GameBackground.h
+SFML/Graphics.hpp
+-
+
+/home/alexey/study/gamecrash/src/include/ClientUI.h
 vector
 -
 string
@@ -26,11 +34,25 @@ string
 SFML/Graphics.hpp
 -
 ./GameSetting.h
-/home/parallels/study/gamecrash/src/include/GameSetting.h
+/home/alexey/study/gamecrash/src/include/GameSetting.h
+./GameBackground.h
+/home/alexey/study/gamecrash/src/include/GameBackground.h
+./GameCloud.h
+/home/alexey/study/gamecrash/src/include/GameCloud.h
 
-/home/parallels/study/gamecrash/src/include/GameSetting.h
+/home/alexey/study/gamecrash/src/include/GameBackground.h
+SFML/Graphics.hpp
+-
 
-/home/parallels/study/gamecrash/src/main.cpp
+/home/alexey/study/gamecrash/src/include/GameCloud.h
+vector
+-
+SFML/Graphics.hpp
+-
+
+/home/alexey/study/gamecrash/src/include/GameSetting.h
+
+/home/alexey/study/gamecrash/src/main.cpp
 sstream
 -
 string
@@ -40,7 +62,7 @@ vector
 SFML/Graphics.hpp
 -
 ./include/GameSetting.h
-/home/parallels/study/gamecrash/src/include/GameSetting.h
+/home/alexey/study/gamecrash/src/include/GameSetting.h
 ./include/ClientUI.h
-/home/parallels/study/gamecrash/src/include/ClientUI.h
+/home/alexey/study/gamecrash/src/include/ClientUI.h
 
